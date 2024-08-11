@@ -6,6 +6,7 @@ import {App } from "octokit";
 import {createNodeMiddleware} from "@octokit/webhooks";
 import fs from "fs";
 import http from "http";
+import { handleEvent } from "./handler.js"
 
 // This reads your `.env` file and adds the variables from that file to the `process.env` object in Node.js.
 dotenv.config();
@@ -54,10 +55,10 @@ async function handlePullRequestOpened({octokit, payload}) {
   }
 };
 
-// This sets up a webhook event listener. When your app receives a webhook event from GitHub with a `X-GitHub-Event` header value of `pull_request` and an `action` payload value of `opened`, it calls the `handlePullRequestOpened` event handler that is defined above.
-app.webhooks.on("pull_request.opened", handlePullRequestOpened);
-app.webhooks.on("issue_comment.created", handlePullRequestOpened);
-app.webhooks.on("issues", handlePullRequestOpened);
+// This sets up a webhook event listener. When your app receives a webhook event from GitHub with a `X-GitHub-Event` header value of `pull_request` and an `action` payload value of `opened`, it calls the `handleEvent` event handler.
+app.webhooks.on("pull_request.opened", handleEvent);
+app.webhooks.on("issue_comment.created", handleEvent);
+app.webhooks.on("issues", handleEvent);
 
 // This logs any errors that occur.
 app.webhooks.onError((error) => {
