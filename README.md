@@ -2,6 +2,13 @@
 q
 we
 qw
+
+da
+d
+as
+d
+sa
+
 e
 
 d
