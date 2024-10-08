@@ -1,2 +1,5 @@
 fileChangeLogs:
   - README.md
+  - node_modules
+  - .gitignore
+  - '.1024'

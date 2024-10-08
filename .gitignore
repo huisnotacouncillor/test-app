@@ -1,2 +1,10 @@
 node_modules
 .token
+# Clacky-specific files
+Clacky/
+# Node.js specific ignores
+npm-debug.log
+package-lock.json
+.env
+.DS_Store
+Thumbs.db
