@@ -3,4 +3,3 @@ fileChangeLogs:
   - node_modules
   - .gitignore
   - '.1024'
-  - .env
