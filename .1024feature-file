@@ -3,3 +3,4 @@ fileChangeLogs:
   - node_modules
   - .gitignore
   - '.1024'
+  - red_background.html
