@@ -8,3 +8,18 @@ package-lock.json
 .env
 .DS_Store
 Thumbs.db
+# System and version control files
+*.log
+*.tmp
+*.bak
+*.swp
+# Environment files
+*.env
+# Build artifacts
+dist/
+build/
+# Configuration files
+*.json
+*.yml
+*.yaml
+*.toml
