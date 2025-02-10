@@ -1,2 +1,4 @@
-compile_command: pnpm run build
-run_command: HOST=0.0.0.0 PORT=8080 npm run dev
+# Command to run when "Run" button clicked
+run_command: node app.js
+# Command to install or update dependencies, will execute each time a new thread created to ensure dependencies up-to-date
+dependency_command: npm install
