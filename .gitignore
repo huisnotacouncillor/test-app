@@ -2,6 +2,9 @@ node_modules
 .token
 # Clacky-specific files
 Clacky/
+.1024*
+!.1024
+.breakpoints
 # Node.js specific ignores
 npm-debug.log
 package-lock.json
@@ -15,11 +18,14 @@ Thumbs.db
 *.swp
 # Environment files
 *.env
+!.env.example
 # Build artifacts
 dist/
 build/
 # Configuration files
 *.json
+!package.json
+!package-lock.json
 *.yml
 *.yaml
 *.toml
@@ -30,7 +36,6 @@ build/
 .1024feature*
 *.dll
 .paas-unit-*
-.breakpoints
 core.*
 coverage/
 # System and Version Control Files

@@ -4,3 +4,5 @@ fileChangeLogs:
   - .gitignore
   - '.1024'
   - red_background.html
+  - .env
+  - github-app-private-key.pem
