@@ -1,4 +1,4 @@
 # Command to run when "RUN" button clicked
-run_command: npm run server
+run_command: node app.js
 # Command to install or update dependencies, will execute each time a new thread created to ensure dependencies up-to-date
 dependency_command: npm install
